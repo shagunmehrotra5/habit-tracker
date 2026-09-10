@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Habit Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div>
+                <h1>My Habit Tracker</h1>
+                <p>Small steps. Every day.</p>
+            </div>
+
+            <button id="todayBtn">Today</button>
+        </header>
+
+
+        <!-- CALENDAR -->
+
+        <section class="calendar-card">
+
+            <div class="calendar-header">
+
+                <button id="prevMonth">‹</button>
+
+                <h2 id="monthYear"></h2>
+
+                <button id="nextMonth">›</button>
+
+            </div>
+
+
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+
+
+            <div id="calendar" class="calendar"></div>
+
+        </section>
+
+
+        <!-- SELECTED DAY -->
+
+        <section class="habits-card">
+
+            <div class="selected-date">
+
+                <div>
+                    <p class="small-label">SELECTED DAY</p>
+                    <h2 id="selectedDate"></h2>
+                </div>
+
+                <div class="progress-box">
+                    <span id="progressText">0%</span>
+                    <small>complete</small>
+                </div>
+
+            </div>
+
+
+            <div id="habitList"></div>
+
+
+            <button id="addHabitBtn" class="add-button">
+                + Add Habit
+            </button>
+
+        </section>
+
+
+        <!-- STATS -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span>🔥</span>
+                <strong id="streak">0</strong>
+                <p>Day Streak</p>
+            </div>
+
+            <div class="stat-card">
+                <span>✓</span>
+                <strong id="totalCompleted">0</strong>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <span>📊</span>
+                <strong id="overallProgress">0%</strong>
+                <p>Consistency</p>
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
